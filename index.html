@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="searchBox">
+            <input class="buscarCidade" type="text" placeholder="Digite sua cidade">
+            <button class="btnWeather">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="error"></div>
+        <div class="weatherBox">
+            <div class="city"></div>
+            <div class="date"></div>
+            <div class="weatherImg">
+                <img src="icons/unknown.png">
+            </div>
+            <div class="containerTemp">
+                <div class="temperature"></div>
+                <span class="tempUnit"></span>
+            </div>
+            <div class="condition"></div>
+            <div class="minMax"></div>
+            <div class="WindAndHumidity">
+                <!-- <div class="wind"></div> Tá com bug na OpenWeatherApi, 
+                    assim que resolverem irá aparecer a velocidade do vento na localização em km/h-->
+                <div class="humidity"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/7b2194fd67.js" crossorigin="anonymous"></script>
+</body>
+</html>
